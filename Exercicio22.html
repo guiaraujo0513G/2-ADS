@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 22</title>
+</head>
+<script>
+    function Exercicio22() {
+        var idade = Number(document.getElementById("idade").value);
+        var peso = Number(document.getElementById("peso").value);
+        if ((idade <= 20) && (peso <= 60)) {
+            alert("Grau de risco 9 ")
+        }
+        else if((idade <= 20) && (peso > 60) && (peso <= 90)){
+            alert("Grau de risco 8 ")
+        }
+        else if((idade <= 20) && (peso > 90)){
+            alert("Grau de risco 7 ")
+        }
+        else if((idade > 20) && (idade <= 50) && (peso < 60)){
+            alert("Grau de risco 6 ")
+        }
+        else if((idade > 20) && (idade <= 50) && (peso > 60) && (peso <= 90)){
+            alert("Grau de risco 5 ")
+        }
+        else if((peso > 90) && (idade > 20) && (idade < 50)){
+            alert("Grau de risco 4 ")
+        }
+        else if((idade > 50) && (peso <= 60)){
+            alert("Grau de risco 3 ")
+        }
+        else if((idade > 50) && (peso > 60) && (peso <= 90)){
+            alert("Grau de risco 2 ")
+        }
+        else if((idade > 50) && (peso > 90)){
+            alert("Grau de risco 1 ")
+        }
+    }
+</script>
+<body>
+    <h1>
+        Grau de Risco
+    </h1>
+    <p align="center"></p>
+    <p> Idade:<input id="idade"></p>
+    <p> Peso:<input id="peso"></p>
+    <p><button onclick="Exercicio22()">Calcular</button></p>
+</body>
+</html>
