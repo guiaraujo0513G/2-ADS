@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio2</title>
+</head>
+<script>
+    function Exercicio2() {
+        var n1= document.getElementById("n1").value
+        var n2= document.getElementById("n2").value
+        var media= (parseInt(n1) + parseInt(n2))/parseInt(2)
+        if(media < 3){
+            alert("Reprovado")
+        }else if(media >= 3 && media < 7){
+            alert("Está de exame")
+        }else {
+            alert("Aprovado")
+        }
+    }
+</script>
+<body>
+    <p>nota1:<input id="n1"></p>
+    <p>nota2:<input id="n2"></p>
+    <p><button onclick="Exercicio2()"> Calcular </button></p>
+    
+</body>
+</html>
